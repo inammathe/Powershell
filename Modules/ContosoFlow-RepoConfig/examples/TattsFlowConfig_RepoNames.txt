@@ -1,0 +1,7 @@
+Lotteries.TaGs.Host
+Lotteries.TaGs.DB
+Lotteries.TaGs.Reports
+Lotteries.Financial.DB
+Lotteries.Tocis.WebServices
+Lotteries.Tocis.Client
+Lotteries.ASL

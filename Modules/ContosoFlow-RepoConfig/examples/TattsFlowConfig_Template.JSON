@@ -1,0 +1,44 @@
+{
+	"Enabled":  true,
+    "GitHub":  {
+                   "BranchProtectionEnabled":  true,
+                   "BranchProtectionRegex":  "^master$|^release[-\\/]\\S+$"
+               },
+    "Octopus":  {
+                    "ProjectId":  "tags-host"
+                },
+    "StatusChecks":  [
+                         {
+                             "Name":  "rally",
+                             "Description":  "Verify rally work items are correct",
+                             "Type":  "Static",
+                             "Required":  true,
+                             "Settings":  ""
+                         },
+                         {
+                             "Name":  "testing",
+                             "Description":  "Verify testing was successful",
+                             "Type":  "Static",
+                             "Required":  true,
+                             "Settings":  ""
+                         },
+                         {
+                             "Name":  "code-review",
+                             "Description":  "Verify code review has been done",
+                             "Type":  "Static",
+                             "Required":  true,
+                             "Settings":  ""
+                         },
+                         {
+                             "Name":  "MandatoryWorkItem",
+                             "Description":  "Need to have a rally item",
+                             "Type":  "MandatoryWorkItem",
+                             "Required":  true,
+                             "Settings":  ""
+                         }
+                     ],
+    "TeamCity":  {
+                     "BuildConfigId":  "ContinuousDelivery_LotteriesCore_TaGsHost_1BuildTestPackagePublishCreateRelease"
+                 },
+    "WorkItemProvider":  "Rally"
+}
