@@ -1,2 +1,2 @@
 # PowerShell
-Evan Lock's Powershell script repo
+Evan Lock's Powershell script portfolio
